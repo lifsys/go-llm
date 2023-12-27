@@ -36,7 +36,7 @@ type InferenceResponse struct {
 }
 
 func Openai_call(system string, prompt string, model string) (string, error) {
-	client := openai.NewClient(get_key("OPEN-AI","Mamba")) // Replace "YOUR_API_KEY" with your actual API key
+	client := openai.NewClient(onepass.Get_key("OPEN-AI","Mamba")) // Replace "YOUR_API_KEY" with your actual API key
 	// Select Model
 	if model == "" {
 			// Set a default model if no model is provided
