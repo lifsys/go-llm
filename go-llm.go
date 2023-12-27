@@ -1,11 +1,13 @@
 package go_llm
 
 import (
+	"fmt"
 	"bytes"
 	"encoding/json"
 	"net/http"
 	"strings"
 	"time"
+	"context"
 
 	"github.com/lifsys/onepass"
 	openai "github.com/sashabaranov/go-openai"
