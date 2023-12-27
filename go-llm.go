@@ -1,4 +1,4 @@
-package go-llm
+package go_llm
 
 import (
 	"bytes"
